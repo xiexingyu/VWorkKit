@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "VWorkKit"                #名称
-  s.version      = "0.0.1"                  #版本号
+  s.version      = "0.0.2"                  #版本号
   s.summary      = "VWork项目库"               #简短介绍
   s.description  = <<-DESC 
                       包含VWork所有项目模块
@@ -14,6 +14,9 @@ Pod::Spec.new do |s|
   s.frameworks   = 'UIKit', 'Foundation'    #所需的framework,多个用逗号隔开
   s.subspec 'Affair' do |affair|
       affair.source_files = 'VWorkKit/Classes/Affair/**/*'
+      s.resource_bundles = {
+        'VWorkKit' => ['VWorkKit/Assets/Affair/*']
+      }
       affair.dependency 'AFNetworking', '~> 3.0.4'
       affair.dependency 'YYKit'
       affair.dependency 'MJRefresh'
