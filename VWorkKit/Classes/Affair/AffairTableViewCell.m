@@ -27,7 +27,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        NSString *path = [NSBundle getPodBundlePath:[self class] ofType:@"affair"];
+        NSString *path = [NSBundle getPodBundlePath:[self class] podName:@"affair"];
         self = [[NSBundle bundleWithPath:path] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil][0];
         [self initView];
     }

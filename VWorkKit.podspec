@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "VWorkKit"                #名称
-  s.version      = "0.0.3"                  #版本号
+  s.version      = "0.0.4"                  #版本号
   s.summary      = "VWork项目库"               #简短介绍
   s.description  = <<-DESC 
                       包含VWork所有项目模块
