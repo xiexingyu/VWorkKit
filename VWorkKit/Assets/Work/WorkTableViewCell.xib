@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20190.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20190.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="WorkTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDl-nk-Beq">
+                    <rect key="frame" x="10" y="41" width="100" height="0.0"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="凡丽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xkn-qc-0fw">
+                    <rect key="frame" x="10" y="10" width="100" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="AKa-mJ-mph"/>
+                        <constraint firstAttribute="height" constant="21" id="df7-DW-fdv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2019-11-22 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbu-KI-ccB">
+                    <rect key="frame" x="165" y="10" width="200" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="2Cm-na-uNv"/>
+                        <constraint firstAttribute="height" constant="21" id="Crd-Je-xHt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.20192019201920193" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#2019年“三大法宝”学习活动业务类考试B卷（补考2）#成绩出来之后，我觉得在我们每道题的后面告知正确答案，以便我们学习。谢谢" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agc-UI-7rM">
+                    <rect key="frame" x="10" y="31" width="355" height="59"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="agc-UI-7rM" secondAttribute="trailing" constant="10" id="1k6-BV-gbk"/>
+                <constraint firstItem="agc-UI-7rM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="R5Z-n9-eKc"/>
+                <constraint firstItem="tbu-KI-ccB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="aVR-LN-7jc"/>
+                <constraint firstItem="agc-UI-7rM" firstAttribute="top" secondItem="Xkn-qc-0fw" secondAttribute="bottom" id="hSY-vF-aj2"/>
+                <constraint firstAttribute="bottom" secondItem="agc-UI-7rM" secondAttribute="bottom" constant="10" id="oux-Dg-O20"/>
+                <constraint firstItem="Xkn-qc-0fw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="qeI-Nu-Cbk"/>
+                <constraint firstAttribute="trailing" secondItem="tbu-KI-ccB" secondAttribute="trailing" constant="10" id="vPG-xj-Kkx"/>
+                <constraint firstItem="Xkn-qc-0fw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="xbv-7e-STV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentLabel" destination="agc-UI-7rM" id="TCG-Wf-R4v"/>
+                <outlet property="nameLabel" destination="Xkn-qc-0fw" id="h3m-4G-FTg"/>
+                <outlet property="timeLabel" destination="tbu-KI-ccB" id="REI-LI-LxE"/>
+            </connections>
+            <point key="canvasLocation" x="-151.20199999999999" y="-187.1064467766117"/>
+        </view>
+    </objects>
+</document>
