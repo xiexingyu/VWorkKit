@@ -26,7 +26,9 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        self = [[NSBundle mainBundle] loadNibNamed:@"AffairTableViewCell" owner:nil options:nil][0];
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSString *path = [bundle pathForResource:@"VWorkKit" ofType:@"bundle"];
+        self = [[NSBundle bundleWithPath:path] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil][0];
         [self initView];
     }
     return self;
