@@ -8,6 +8,7 @@
 
 #import "AffairTableViewCell.h"
 #import <WXKit/UIImageView+WXAdd.h>
+#import <WXKit/NSBundle+WXAdd.h>
 
 @interface AffairTableViewCell ()
 
@@ -26,8 +27,7 @@
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-        NSString *path = [bundle pathForResource:@"VWorkKit" ofType:@"bundle"];
+        NSString *path = [NSBundle getPodBundlePath:[self class] ofType:@"affair"];
         self = [[NSBundle bundleWithPath:path] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil][0];
         [self initView];
     }
